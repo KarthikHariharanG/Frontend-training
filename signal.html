@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signal</title>
+    <link rel="stylesheet" href="signal.css">
+
+</head>
+<body>
+    <div class="junction">
+        <div class="roads-button">
+            <button type="button" name="" id="northbutton" class="north-button" onclick="northbutton()">north road</button>
+            <div class="road-north">
+                <div class="road-north-right" id="road-north-right"></div>
+                <div class="road-north-left" id="road-north-left"></div>
+            </div>
+        </div>
+
+        <div class="roads-button">
+            <button type="button" name="" id="eastbutton" class="east-button" onclick="eastbutton()">east road</button>
+            <div class="road-east">
+                <div class="road-east-right" id="road-east-right"></div>
+                <div class="road-east-left" id="road-east-left"></div>
+            </div>
+        </div>
+
+        <div class="roads-button">
+            <button type="button" name="" id="westbutton" class="west-button" onclick="westbutton()">west road</button>
+            <div class="road-west">
+                <div class="road-west-right" id="road-west-right"></div>
+                <div class="road-west-left" id="road-west-left"></div>
+            </div>
+        </div>
+
+        <div class="roads-button">
+            <button type="button" name="" id="southbutton" class="south-button" onclick="southbutton()">south road</button>
+            <div class="road-south">
+                <div class="road-south-right" id="road-south-right"></div>
+                <div class="road-south-left" id="road-south-left"></div>
+            </div>
+        </div>
+
+        <div class="jc" id="junc"></div>
+        <div class="jcircle"></div>
+    </div>
+    <script>
+        var isnorthbuttonOn=false;
+        var is
+        
+        On=false;
+        var isnorth=false;
+        var isnorthbuttonOn=false;
+        var isnorthbuttonOn=false;
+        var isnorthbuttonOn=false;
+        var isnorthbuttonOn=false;
+        var isnorthbuttonOn=false;
+        var isnorthbuttonOn=false;
+        var isnorthbuttonOn=false;
+
+        function northbutton() {
+            document.getElementById('road-north-right').style.backgroundColor = "green";
+            document.getElementById('road-north-left').style.backgroundColor = "green";
+            document.getElementById('road-east-right').style.backgroundColor = "green";
+            document.getElementById('road-south-left').style.backgroundColor = "green";
+            document.getElementById('road-west-left').style.backgroundColor = "green";
+            document.getElementById('junc').style.backgroundColor = "green";
+        }
+        function eastbutton() {
+            document.getElementById('road-east-right').style.backgroundColor = "green";
+            document.getElementById('road-east-left').style.backgroundColor = "green";
+            document.getElementById('road-south-left').style.backgroundColor = "green";
+            document.getElementById('road-west-left').style.backgroundColor = "green";
+            document.getElementById('road-north-right').style.backgroundColor = "green";
+            document.getElementById('junc').style.backgroundColor = "green";
+        }
+        function southbutton() {
+            document.getElementById('road-south-left').style.backgroundColor = "green";
+            document.getElementById('road-south-right').style.backgroundColor = "green";
+            document.getElementById('road-west-left').style.backgroundColor = "green";
+            document.getElementById('road-north-right').style.backgroundColor = "green";
+            document.getElementById('road-east-right').style.backgroundColor = "green";
+            document.getElementById('junc').style.backgroundColor = "green";
+        }
+        function westbutton() {
+            document.getElementById('road-west-left').style.backgroundColor = "green";
+            document.getElementById('road-west-right').style.backgroundColor = "green";
+            document.getElementById('road-north-right').style.backgroundColor = "green";
+            document.getElementById('road-east-right').style.backgroundColor = "green";
+            document.getElementById('road-south-left').style.backgroundColor = "green";
+            document.getElementById('junc').style.backgroundColor = "green";
+        }
+    </script>
+</body>
+
+</html>

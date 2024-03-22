@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traffic signal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="traffic signal.css">-->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>JUNCTION TRAFFIC SIGNAL</h2>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col mt-4"><button type="button" class="btn btn-danger" id="north"
+                        onclick="trafficsignalSystem('north')">NORTH SIGNAL</button></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col mt-4"><button type="button" class="btn btn-danger" id="west"
+                        onclick="trafficsignalSystem('west')">WEST SIGNAL</button></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col mt-4 "><button type="button" class="btn btn-danger" id="east"
+                        onclick="trafficsignalSystem('east')">EAST SIGNAL</button></div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col mt-4"><button type="button" class="btn btn-danger" id="south"
+                        onclick="trafficsignalSystem('south')">SOUTH SIGNAL</button></div>
+            </div>
+            <script>
+                var isnorthOn = false;
+                var issouthOn = false;
+                var iseastOn = false;
+                var iswestOn = false;
+
+                function trafficsignalSystem(item) {
+                    let north = document.getElementById('north');
+                    let south = document.getElementById('south');
+                    let east = document.getElementById('east');
+                    let west = document.getElementById('west');
+
+
+                    if (item == 'north') {
+                        if (!isnorthOn)
+                            north.className = "btn btn-success";
+                        south.className = "btn btn-danger";
+                        east.className = "btn btn-warning";
+                        west.className = "btn btn-danger";
+                        isnorthOn = !isnorthOn;
+                    }
+                    if (item == 'south') {
+                        if (!issouthOn)
+                            south.className = "btn btn-success";
+                        north.className = "btn btn-danger";
+                        east.className = "btn btn-danger";
+                        west.className = "btn btn-warning";
+                        issouthOn = !issouthOn;
+                    }
+                    if (item == 'east') {
+                        if (!iseastOn)
+                            east.className = "btn btn-success";
+                        north.className = "btn btn-danger";
+                        south.className = "btn btn-warning";
+                        west.className = "btn btn-danger";
+                        iseastOn = !iseastOn;
+                    }
+                    if (item == 'west') {
+                        if (!iswestOn)
+                            west.className = "btn btn-success";
+                        north.className = "btn btn-warning";
+                        south.className = "btn btn-danger";
+                        east.className = "btn btn-danger";
+                        iswestOn = !iswestOn;
+                    }
+                }
+            </script>
+            <style>
+
+            </style>
+        </div>
+    </div>
+</body>
+
+</html>

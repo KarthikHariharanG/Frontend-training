@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String concepts</title>
+</head>
+<body>
+    <div class="row mt4 mb-4">
+        <h2>String Methods</h2>
+        <p id="strOp"></p>
+        <script>
+            function stringMethods(){
+                let result = "";
+                let str = " Hai Hello Project yepo mudipinga? ";
+    
+                result += "String : " + str + "<br>";
+                result += "Length : " + str.length + "<br>";
+                result += "Index Of i : " + str.indexOf("i") + "<br>";
+                result += "Last Index Of i : " + str.lastIndexOf("i") + "<br>";
+                result += "Includes yepo : " + str.includes("yepo") + "<br>";
+                result += "Includes mudichitom : " + str.includes("mudichitom") + "<br>";
+                result += "Char At 5 : " + str.charAt(5) + "<br>";
+                result += "Starts With  Hai : " + str.startsWith(" Hai") + "<br>";
+                result += "Starts With Hello : " + str.startsWith("Hello") + "<br>";
+                result += "Ends with Hello : " + str.endsWith("Hello") + "<br>";
+                result += "Ends With ?  : " + str.endsWith("? ") + "<br>";
+                result += "Replace yepo When : " + str.replace("yepo", "when") + "<br>";
+                result += "To Uppercase  : " + str.toUpperCase() + "<br>";
+                result += "To Lower Case : " + str.toLowerCase() + "<br>";
+    
+                document.getElementById('strOp').innerHTML = result;
+            }
+            stringMethods();
+        </script>
+    </div>
+    <div>
+        <script>
+            function startsWith(str,prefix){
+                return str.substring(0,prefix.length)===prefix;
+                console.log(startsWith("project la mudika mudiyadhu","project"));
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.register{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: gold;
+
+}
+.svg{
+    background-color: black;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**{
+    margin: 0;
+    padding: 0;
+}
+.hari{
+    margin-left: 50%;
+    border-width: 50px;
+}
+h1{
+    display: inline;
+    height: 50px;
+    padding: 20px;
+}
+.firstname{
+    display: inline;
+    margin-top: 50px;
+
+}
+#one{
+    padding: 12px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+    animation:reverse;
+    animation-duration: 1s;
+    background-color:black;
+}
+#one:hover{
+    cursor: pointer;
+    color: black;
+    background-color: aliceblue;
+    transform: scale(2px);
+    
+}
+#register{
+    padding:10px;
+}*/

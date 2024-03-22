@@ -1,0 +1,185 @@
+.junction {
+    background-color: sandybrown;
+    display: flex;
+    height: 500px;
+    width: 750px;
+}
+
+.north-button {
+    height: 35px;
+    width: 100px;
+    position: fixed;
+    top: 25px;
+    left: 350px;
+}
+
+.east-button {
+    height: 35px;
+    width: 100px;
+    position: fixed;
+    top: 230px;
+    left: 650px;
+    rotate: -90deg;
+}
+
+.west-button {
+    height: 35px;
+    width: 100px;
+    position: fixed;
+    left: 20px;
+    top: 230px;
+    rotate: 90deg;
+}
+
+.south-button {
+    height: 35px;
+    width: 100px;
+    position: relative;
+    top: 450px;
+    left: 342px;
+}
+
+.jc {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    left: 351px;
+    top: 203px;
+    background-color: black;
+}
+.jcircle{
+    background-color: sandybrown;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    top: 235px;
+    left: 384px;
+    border-color: black;
+}
+
+.road-north {
+    background-color: black;
+    height: 130px;
+    width: 100px;
+    position: fixed;
+    left: 349px;
+    top: 70px;
+    border-style: solid;
+    border-color: white;
+}
+
+.road-east {
+    background-color: black;
+    position: fixed;
+    width: 150px;
+    height: 100px;
+    left: 451px;
+    top: 200px;
+    border-style: solid;
+    border-color: white;
+}
+
+.road-west {
+    background-color: black;
+    position: fixed;
+    width: 150px;
+    height: 100px;
+    top: 200px;
+    left: 197px;
+    border-style: solid;
+    border-color: white;
+}
+
+.road-south {
+    background-color: black;
+    position: fixed;
+    height: 130px;
+    width: 100px;
+    top: 302px;
+    left: 349px;
+    border-style: solid;
+    border-color: white;
+}
+
+.road-north-right{
+    background-color:black;
+    position: fixed;
+    height: 130px;
+    width: 47px;
+    left: 352px;
+    top: 72px;
+    border-right: solid;
+    border-color: white;
+}
+.road-north-left{
+    background-color:black;
+    position: fixed;
+    height: 129px;
+    width: 48px;
+    left: 401px;
+    top: 73px;
+    border-left: solid;
+    border-color: white;
+}
+.road-east-right{
+    background-color: black;
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    left: 453px;
+    top: 202px;
+    border-bottom: solid;
+    border-color:white;
+}
+.road-east-left{
+    background-color: black;
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    left: 453px;
+    top: 250px;
+    border-top: solid;
+    border-color:white;
+}
+.road-south-right{
+    background-color: black;
+    position: fixed;
+    height: 130px;
+    width: 50px;
+    top: 305px;
+    left: 351px;
+    border-right: solid;
+    border-color: white;
+}
+.road-south-left{
+    background-color:black;
+    position: fixed;
+    height: 130px;
+    width: 50px;
+    top: 305px;
+    left: 399px;
+    border-left: solid;
+    border-color: white;
+}
+.road-west-right{
+    background-color: black;
+    position: fixed;
+    width: 151px;
+    height: 49px;
+    top: 202px;
+    left: 199px;
+    border-bottom: solid;
+    border-color: white;
+}
+.road-west-left{
+    background-color:black;
+    position: fixed;
+    width: 151px;
+    height: 49px;
+    top: 252px;
+    left: 199px;
+    border-top: solid;
+    border-color: white;
+
+}
